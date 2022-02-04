@@ -3,6 +3,7 @@ import "./App.css";
 import styled from "styled-components";
 import Pricing from "./components/Pricing";
 import Title from "./components/Title";
+import Pricedetails from "./components/PriceDetails";
 
 function App() {
   return (
@@ -49,6 +50,7 @@ function App() {
           ]}
         />
       </MainContainer>
+      <Pricedetails/>
     </>
   );
 }
