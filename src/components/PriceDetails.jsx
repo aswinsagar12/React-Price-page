@@ -1,64 +1,39 @@
 import React from "react";
+import "../App.css";
 
-const Pricedetails = () => {
+const PriceDetails = () => {
   return (
     <div className="py-12 px-6">
-      <h1
-        style={{
-          textAlign: "center",
-          fontFamily: "Poppins, sans-serif",
-          fontSize: "34px",
-          fontWeight: "700 ",
-        }}
-      >
-        Compare our plans side-by-side
-      </h1>
+      <h1 className="heading">Compare our plans side-by-side</h1>
 
       {/*Table*/}
 
-      <table className=" text-base ml-60 mt-20 ">
+      <table
+        cellSpacing="15px"
+        cellPadding="20px"
+        className="table text-base ml-60 mt-20 "
+      >
         <thead className=" text-base ">
           <tr key="">
-            <th  style={{ height: "40px", width: "400px", margin: "10px" }}
-              className="text-left font-[Poppins]
+            <th
+              className="baseheading text-left font-[Poppins]
                 font-2xl
                 font-[600]"
             >
-              <span
-                style={{
-                  fontSize: "20px",
-                  fontWeight: "600",
-                  fontFamily: "Roboto",
-                  margin: "120px 0px 0px 20px",
-
-                }}
-              >
-                Basic
-              </span>
+              <span className="basespan">Basic</span>
             </th>
 
             {/* Free section */}
 
-            <th
-              style={{ height: "40px", width: "360px", margin: "10px" }}
-              className=" px-4 py-4    text-center "
-            >
-              <div
-                style={{
-                  fontSize: "30px",
-                  fontWeight: "600",
-                }}
-                className="font-[Poppins]"
-              >
-                Free
-              </div>
+            <th className="freeheading px-4 py-4    text-center ">
+              <div className="freediv font-[Poppins]">Free</div>
               <div className="mt-3">
                 <span className="text-base">$0 </span>
-                <span className="font-bold ml-1">per social channel</span>
+                <span className="font-base ml-1">per social channel</span>
               </div>
               <div className="mt-3">
                 <a
-                  href="#"
+                  href="."
                   className="bg-blue-500 hover:bg-blue-700 text-white font-[Poppins] inline-block rounded w-80 h-12 py-3 "
                 >
                   Get Started
@@ -68,12 +43,7 @@ const Pricedetails = () => {
 
             {/* Essenstail section*/}
 
-            <th
-              style={{ height: "40px", width: "360px" ,
-
-                }}
-              className=" px-4 py-4    text-center "
-            >
+            <th className="essenstailheading px-4 py-4    text-center ">
               <div
                 style={{
                   fontSize: "30px",
@@ -84,13 +54,13 @@ const Pricedetails = () => {
                 Essentials
               </div>
               <div className="mt-3">
-                <span className="text-base">$0 </span>
-                <span className="font-bold ml-1">per social channel</span>
+                <span className="text-base">$5/mo</span>
+                <span className="font-base ml-1">per social channel</span>
               </div>
               <div className="mt-3">
                 <a
-                  href="#"
-                  className="bg-blue-500 hover:bg-blue-700 text-white inline-block font-[Poppins] rounded rounded w-80 h-12 py-3"
+                  href="."
+                  className="bg-blue-500 hover:bg-blue-700 text-white inline-block font-[Poppins] rounded  w-80 h-12 py-3"
                 >
                   Try free for 14 days
                 </a>
@@ -102,14 +72,8 @@ const Pricedetails = () => {
         {/*body section*/}
 
         <tbody>
-          <tr key="">
-            <td
-              style={{
-                height: "45px",
-                width: "336.663px",
-                padding: "20px 20px 20px 20px",
-              }}
-            >
+          <tr key="1">
+            <td className="tabledetails">
               <span
                 style={{
                   fontSize: "20px",
@@ -170,7 +134,7 @@ const Pricedetails = () => {
                 Social Channels
               </span>{" "}
               <br />
-              <span style={{color:'#636363'}}>
+              <span style={{ color: "#636363" }}>
                 Example: 5 Twitter profiles and 3 Facebook pages counts as 8
                 social channels.
               </span>
@@ -224,7 +188,7 @@ const Pricedetails = () => {
                 Scheduled Posts Per Social Channel
               </span>{" "}
               <br />
-              <span style={{color:'#636363'}}>
+              <span style={{ color: "#636363" }}>
                 The number of posts you can store in your queue (per channel).
                 There is no monthly, or yearly limit.
               </span>
@@ -269,7 +233,7 @@ const Pricedetails = () => {
                 Included Users
               </span>
               <br />
-              <span style={{color:'#636363'}}>
+              <span style={{ color: "#636363" }}>
                 The number of users who can access and contribute content to
                 your Buffer account.
               </span>
@@ -323,10 +287,11 @@ const Pricedetails = () => {
                 >
                   ADD ON
                 </span>
-
-              </span><br/>
-              <span style={{color:'#636363'}}>
-              Invite Additional Team members or clients to collaborate with you
+              </span>
+              <br />
+              <span style={{ color: "#636363" }}>
+                Invite Additional Team members or clients to collaborate with
+                you
               </span>
             </td>
             <td className=" text-center px-4 py-6">
@@ -346,10 +311,9 @@ const Pricedetails = () => {
                   fontSize: "16px",
                 }}
               >
-               Unlimited with Team Pack Add-on
+                Unlimited with Team Pack Add-on
               </span>{" "}
               <br />
-
             </td>
           </tr>
         </tbody>
@@ -358,4 +322,4 @@ const Pricedetails = () => {
   );
 };
 
-export default Pricedetails;
+export default PriceDetails;
