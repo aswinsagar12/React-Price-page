@@ -49,7 +49,7 @@ function App() {
           ]}
         />
       </MainContainer>
-      {/* <PriceDetails/> */}
+       <PriceDetails/>
       <TotalPlan
         header="Social Network"
         text1="Instagram"

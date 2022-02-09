@@ -1,16 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&family=Roboto:wght@100;300;500&display=swap");
-.container {
-  font-family: "Poppins", sans-serif;
-  width: 368px;
-  min-height: 600px;
-  height: max-content;
-  margin-top: 100px;
-  border: solid;
-  border-radius: 5px;
-  margin: 16px;
+h1{
+  font-family: Poppins, sans-serif;
+font-size: 34px;
+font-weight: 700;
+letter-spacing: 0.1px;
+line-height: 44px;
+text-decoration: none solid rgb(0, 0, 0);
+text-align: center;
+word-spacing: 0px;
+margin:80px;
+margin-top: 150px;
 }
-
-.table-container {
+.price-container {
   padding: 0 10%;
   margin: 40px auto 0;
   display: flex;
@@ -30,9 +31,47 @@
   text-align: left;
   vertical-align: bottom;
   word-spacing: 0px;
-  height: 27.6px;
+  height: 121px;
   width: 336.663px;
   padding: 20px 20px 20px 20px;
+}
+.price-container .detail-table thead tr .free-heading .title-div {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.1px;
+  line-height: 18.4px;
+  text-decoration: none solid rgb(0, 0, 0);
+  text-align: center;
+  vertical-align: middle;
+  word-spacing: 0px;
+  height: 121px;
+  width: 336.663px;
+  padding: 20px 20px 20px 20px;
+}
+.price-container .detail-table thead tr .heading span {
+  font-family: Roboto, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0.1px;
+  line-height: 30.4px;
+  text-decoration: none solid rgb(0, 0, 0);
+  text-align: center;
+  word-spacing: 0px;
+  height: 30.4px;
+width: 336.663px;
+margin: 5px 0 10px 0;
+}
+.price-container .detail-table thead tr .free-heading a {
+  height: 48px;
+  width: 336.663px;
+  padding: 0 24px 0 24px;
+  background-color: #2c4bff;
+  background-position: 0% 0%;
+  color: #ffffff;
+  height: 48px;
+  width: 336.663px;
+  padding: 0 24px 0 24px;
 }
 .detail-table tbody tr {
   border-top: 1px solid rgba(169, 161, 161, 0.2);
@@ -46,7 +85,7 @@
   text-decoration: none solid rgb(0, 0, 0);
   vertical-align: middle;
   word-spacing: 0px;
-  height: 40px;
+  height: 45px;
   width: 336.663px;
   padding: 20px 20px 20px 20px;
 }
@@ -62,87 +101,23 @@
   font-weight: normal;
 }
 
+
 @media (max-width: 768px) {
-  .table-container {
+  .price-container {
     display: block;
 
     margin: 0px;
   }
-  .table-container thead {
+  .price-container thead {
     display: flexbox;
   }
-  .table-container,
-  .table-container tbody,
-  .table-container td {
+  .price-container,
+  .price-container tbody,
+  .price-container td {
     display: flexbox;
     width: 100%;
   }
-  .table-container tr {
+  .price-container tr {
     margin-bottom: 15px;
   }
 }
-
-
-
-/* table {
-  border-spacing: 20px;
-  display:flex;
-  align-items: center;
-  justify-content: center;
-}
-.heading {
-  text-align: center;
-  font-family: "Poppins", sans-serif;
-  font-size: 38px;
-  font-weight: 700;
-}
-.baseheading {
-  min-height: 40px;
-  max-width: 400px;
-  margin: 10px;
-  border-bottom: 1px solid rgb(208, 202, 202);
-}
-.basespan {
-  font-size: 20px;
-  font-weight: 600;
-  font-family: "Roboto", sans-serif;
-  margin: 120px 0px 0px 20px;
-}
-.freeheading {
-  height: 40px;
-  width: 380px;
-  margin: 10px;
-  border-bottom: 1px solid rgb(208, 202, 202);
-}
-.freediv {
-  font-size: 30px;
-  font-weight: 600;
-}
-.essenstailheading {
-  height: 40px;
-  width: 380px;
-  margin: 10px;
-
-  border-bottom: 1px solid rgb(208, 202, 202);
-
-  margin-right: 20px;
-}
-.tabledetails{
-
-    height: 45px;
-    width: 336.663px;
-    padding: 20px 20px 20px 20px;
-    border-bottom: 1px solid rgb(208, 202, 202);
-
-}
-
-
-@media (max-width:520px) {
-
-
-
- table{
-   margin: 0;
-   padding: 0;
- }
-} */
